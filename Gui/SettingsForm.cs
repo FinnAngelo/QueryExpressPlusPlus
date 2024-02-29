@@ -16,9 +16,9 @@ namespace QueryExPlus.Gui
 			LoadSettings();
 		}
 
-		public DialogResult ShowDialog(IWin32Window owner)
+		public new DialogResult ShowDialog(IWin32Window owner)
 		{
-			//this.Icon = ((Form) owner).Icon;
+			this.Icon = ((Form) owner).Icon;
 			return base.ShowDialog(owner);
 		}
 
