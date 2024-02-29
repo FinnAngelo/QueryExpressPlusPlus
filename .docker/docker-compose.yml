@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  sqlserver:
+    ports:
+      - "1433:1433"
+    # volumes:
+      # - C:/GIT/Data:/Data
+    environment:
+      # TODO: FFS - FIX THIS SECURITY DISASTER!
+      SA_PASSWORD: Pass-123
+      ACCEPT_EULA: Y
+    image: "mcr.microsoft.com/mssql/server"

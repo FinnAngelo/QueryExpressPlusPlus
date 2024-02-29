@@ -232,7 +232,7 @@ namespace QueryExPlus
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(764, 417);
 			this.Controls.Add(this.splitBrowser);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			//this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
 			this.Name = "QueryForm";
 			this.Text = "QueryForm";

@@ -144,12 +144,12 @@ namespace QueryExPlus
             return cm;
         }
 
-        public ContextMenu GetContextMenu()
+        public ContextMenuStrip GetContextMenu()
         {
-            MenuItem[] mi = new MenuItem[] { new MenuItem(miCopy.Text, new EventHandler(miCopy_Click)) };
-            ContextMenu cm = new ContextMenu();
-            cm.MenuItems.AddRange(new MenuItem[] {new MenuItem(miCopy.Text, new EventHandler(miCopy_Click))
-            ,new MenuItem(miCopyWithHeaders.Text, new EventHandler(miCopyWithHeaders_Click))});
+            ToolStripMenuItem[] mi = new ToolStripMenuItem[] { new ToolStripMenuItem(miCopy.Text, null, new EventHandler(miCopy_Click)) };
+            ContextMenuStrip cm = new ContextMenuStrip();
+            cm.Items.AddRange(new ToolStripMenuItem[] {new ToolStripMenuItem(miCopy.Text, null, new EventHandler(miCopy_Click))
+            ,new ToolStripMenuItem(miCopyWithHeaders.Text, null, new EventHandler(miCopyWithHeaders_Click))});
             return cm;
         }   
 

@@ -139,7 +139,7 @@ namespace QueryExPlus
 			// 
 			// newToolStripMenuItem
 			// 
-			this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+			//this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
 			this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.newToolStripMenuItem.Name = "newToolStripMenuItem";
 			this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
@@ -149,7 +149,7 @@ namespace QueryExPlus
 			// 
 			// settingsToolStripMenuItem
 			// 
-			this.settingsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("settingsToolStripMenuItem.Image")));
+			//this.settingsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("settingsToolStripMenuItem.Image")));
 			this.settingsToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
 			this.settingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
@@ -159,7 +159,7 @@ namespace QueryExPlus
 			// 
 			// openToolStripMenuItem
 			// 
-			this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+			//this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
 			this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.openToolStripMenuItem.Name = "openToolStripMenuItem";
 			this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
@@ -181,7 +181,7 @@ namespace QueryExPlus
 			// 
 			// saveToolStripMenuItem
 			// 
-			this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+			//this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
 			this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
 			this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -224,7 +224,7 @@ namespace QueryExPlus
 			// 
 			// printToolStripMenuItem
 			// 
-			this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+			//this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
 			this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.printToolStripMenuItem.Name = "printToolStripMenuItem";
 			this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
@@ -289,7 +289,7 @@ namespace QueryExPlus
 			// 
 			// cutToolStripMenuItem
 			// 
-			this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+			//this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
 			this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
 			this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -298,7 +298,7 @@ namespace QueryExPlus
 			// 
 			// copyToolStripMenuItem
 			// 
-			this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+			//this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
 			this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
 			this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -307,7 +307,7 @@ namespace QueryExPlus
 			// 
 			// copyWithHeadersToolStripMenuItem
 			// 
-			this.copyWithHeadersToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyWithHeadersToolStripMenuItem.Image")));
+			//this.copyWithHeadersToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyWithHeadersToolStripMenuItem.Image")));
 			this.copyWithHeadersToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.copyWithHeadersToolStripMenuItem.Name = "copyWithHeadersToolStripMenuItem";
 			this.copyWithHeadersToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
@@ -317,7 +317,7 @@ namespace QueryExPlus
 			// 
 			// pasteToolStripMenuItem
 			// 
-			this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+			//this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
 			this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
 			this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -375,7 +375,7 @@ namespace QueryExPlus
 			// 
 			// executeToolStripMenuItem
 			// 
-			this.executeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("executeToolStripMenuItem.Image")));
+			//this.executeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("executeToolStripMenuItem.Image")));
 			this.executeToolStripMenuItem.Name = "executeToolStripMenuItem";
 			this.executeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.executeToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
@@ -384,7 +384,7 @@ namespace QueryExPlus
 			// 
 			// cancelExecutingQueryToolStripMenuItem
 			// 
-			this.cancelExecutingQueryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cancelExecutingQueryToolStripMenuItem.Image")));
+			//this.cancelExecutingQueryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cancelExecutingQueryToolStripMenuItem.Image")));
 			this.cancelExecutingQueryToolStripMenuItem.Name = "cancelExecutingQueryToolStripMenuItem";
 			this.cancelExecutingQueryToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F5)));
             this.cancelExecutingQueryToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
@@ -410,7 +410,7 @@ namespace QueryExPlus
 			// 
 			// resultsInTextToolStripMenuItem
 			// 
-			this.resultsInTextToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("resultsInTextToolStripMenuItem.Image")));
+			//this.resultsInTextToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("resultsInTextToolStripMenuItem.Image")));
 			this.resultsInTextToolStripMenuItem.Name = "resultsInTextToolStripMenuItem";
 			this.resultsInTextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
             this.resultsInTextToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
@@ -419,7 +419,7 @@ namespace QueryExPlus
 			// 
 			// resultsInGridToolStripMenuItem
 			// 
-			this.resultsInGridToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("resultsInGridToolStripMenuItem.Image")));
+			//this.resultsInGridToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("resultsInGridToolStripMenuItem.Image")));
 			this.resultsInGridToolStripMenuItem.Name = "resultsInGridToolStripMenuItem";
 			this.resultsInGridToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
             this.resultsInGridToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
@@ -490,9 +490,9 @@ namespace QueryExPlus
 			// 
 			// newToolStripButton
 			// 
-			this.newToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
-			this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.newToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
+			//this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.newToolStripButton.Name = "newToolStripButton";
 			this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.newToolStripButton.Text = "&New";
@@ -500,9 +500,9 @@ namespace QueryExPlus
 			// 
 			// openToolStripButton
 			// 
-			this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-			this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+			//this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.openToolStripButton.Name = "openToolStripButton";
 			this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.openToolStripButton.Text = "&Open";
@@ -510,9 +510,9 @@ namespace QueryExPlus
 			// 
 			// saveToolStripButton
 			// 
-			this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-			this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+			//this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.saveToolStripButton.Name = "saveToolStripButton";
 			this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.saveToolStripButton.Text = "&Save";
@@ -525,9 +525,9 @@ namespace QueryExPlus
 			// 
 			// ExecutetoolStripButton
 			// 
-			this.ExecutetoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.ExecutetoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ExecutetoolStripButton.Image")));
-			this.ExecutetoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.ExecutetoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.ExecutetoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ExecutetoolStripButton.Image")));
+			//this.ExecutetoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.ExecutetoolStripButton.Name = "ExecutetoolStripButton";
 			this.ExecutetoolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.ExecutetoolStripButton.Text = "Execute";
@@ -535,9 +535,9 @@ namespace QueryExPlus
 			// 
 			// cancelExecutingQuerytoolStripButton
 			// 
-			this.cancelExecutingQuerytoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.cancelExecutingQuerytoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cancelExecutingQuerytoolStripButton.Image")));
-			this.cancelExecutingQuerytoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.cancelExecutingQuerytoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.cancelExecutingQuerytoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cancelExecutingQuerytoolStripButton.Image")));
+			//this.cancelExecutingQuerytoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.cancelExecutingQuerytoolStripButton.Name = "cancelExecutingQuerytoolStripButton";
 			this.cancelExecutingQuerytoolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.cancelExecutingQuerytoolStripButton.Text = "Cancel Executing Query";
@@ -550,9 +550,9 @@ namespace QueryExPlus
 			// 
 			// resultsInTexttoolStripButton
 			// 
-			this.resultsInTexttoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.resultsInTexttoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("resultsInTexttoolStripButton.Image")));
-			this.resultsInTexttoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.resultsInTexttoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.resultsInTexttoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("resultsInTexttoolStripButton.Image")));
+			//this.resultsInTexttoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.resultsInTexttoolStripButton.Name = "resultsInTexttoolStripButton";
 			this.resultsInTexttoolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.resultsInTexttoolStripButton.Text = "Results In Text";
@@ -560,9 +560,9 @@ namespace QueryExPlus
 			// 
 			// resultsInGridtoolStripButton
 			// 
-			this.resultsInGridtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.resultsInGridtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("resultsInGridtoolStripButton.Image")));
-			this.resultsInGridtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+			//this.resultsInGridtoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			//this.resultsInGridtoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("resultsInGridtoolStripButton.Image")));
+			//this.resultsInGridtoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.resultsInGridtoolStripButton.Name = "resultsInGridtoolStripButton";
 			this.resultsInGridtoolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.resultsInGridtoolStripButton.Text = "Results In Grid";
@@ -593,7 +593,7 @@ namespace QueryExPlus
 			this.ClientSize = new System.Drawing.Size(757, 533);
 			this.Controls.Add(this.toolStripPanel1);
 			this.Controls.Add(this.menuStrip1);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			//this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
