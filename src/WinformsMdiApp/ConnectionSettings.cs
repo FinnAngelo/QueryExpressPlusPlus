@@ -4,7 +4,7 @@ using System.Collections;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     [GeneratedCode("xsd", "2.0.50727.42")]
     [Serializable()]

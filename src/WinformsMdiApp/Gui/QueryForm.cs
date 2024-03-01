@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
 	internal partial class QueryForm : Form, IQueryForm
 	{
@@ -25,7 +25,7 @@ namespace QueryExPlus
 		bool realFileName = false;
 		string fileName;						// Filename for when query is saved
 		private bool resultsInText = !Properties.Settings.Default.ResultInGridDefault;
-		private bool gridShowNulls = QueryExPlus.Properties.Settings.Default.ShowNulls;
+		private bool gridShowNulls = QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.ShowNulls;
 		RichTextBox txtResultsBox;				// handle to the rich textbox used to display text results
 		private bool ErrorOccured = false;
 		private long rowCount;
@@ -1069,8 +1069,8 @@ namespace QueryExPlus
 		void SaveResultsCsv(string fileName)
 		{
 			// Save the currently selected table only
-			string DL = QueryExPlus.Properties.Settings.Default.Delimiter;
-			char TDL = QueryExPlus.Properties.Settings.Default.TextDelimiter;
+			string DL = QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.Delimiter;
+			char TDL = QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.TextDelimiter;
 			DataTable table = (DataTable)((DataGridView)tabResults.SelectedTab.Controls[0]).DataSource;
 			System.IO.StreamWriter w;
 			try { w = System.IO.File.CreateText(fileName); }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     /// <summary>
     /// QueryExpress.dl3bak.OleDbBrowser 

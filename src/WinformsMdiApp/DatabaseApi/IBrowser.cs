@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     #region Browser Interface
     /// <summary>

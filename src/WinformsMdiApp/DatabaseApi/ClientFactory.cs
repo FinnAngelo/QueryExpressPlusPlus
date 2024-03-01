@@ -1,6 +1,6 @@
 using System;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     /// <summary>
     /// Opens the connection to a Database.

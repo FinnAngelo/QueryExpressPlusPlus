@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlus.Gui
+namespace QueryExPlusPlus.WinformsMdiApp.Gui
 {
 	public partial class SettingsForm : Form
 	{

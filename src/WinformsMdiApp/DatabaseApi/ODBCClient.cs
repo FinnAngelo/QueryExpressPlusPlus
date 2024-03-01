@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.Odbc;
 using System.Text;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     class OdbcClient  : DbClient
     {

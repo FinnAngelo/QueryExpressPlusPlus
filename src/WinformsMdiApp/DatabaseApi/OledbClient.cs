@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Text;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     class OleDbClient  : DbClient
     {

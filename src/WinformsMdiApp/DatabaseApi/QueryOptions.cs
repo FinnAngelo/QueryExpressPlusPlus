@@ -1,7 +1,7 @@
 using System.Data;
 using System.Windows.Forms;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     /// <summary>
     /// Interface defining query options that can be globally applied 

@@ -1,4 +1,4 @@
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     partial class ConnectForm
     {

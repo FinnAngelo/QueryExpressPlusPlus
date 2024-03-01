@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QueryExPlus.Properties
+namespace QueryExPlusPlus.WinformsMdiApp.Properties
 {
 
 

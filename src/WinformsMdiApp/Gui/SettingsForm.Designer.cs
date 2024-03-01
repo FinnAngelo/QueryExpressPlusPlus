@@ -1,4 +1,4 @@
-﻿namespace QueryExPlus.Gui
+﻿namespace QueryExPlusPlus.WinformsMdiApp.Gui
 {
 	partial class SettingsForm
 	{

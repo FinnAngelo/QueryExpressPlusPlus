@@ -1,8 +1,8 @@
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Text;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 { 
     class SqlDBClient : DbClient
     {

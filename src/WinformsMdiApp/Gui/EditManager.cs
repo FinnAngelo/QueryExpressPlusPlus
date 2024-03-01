@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     /// <summary>
     /// A mediator for managing Edit menu commands (copy, cut, paste, etc)

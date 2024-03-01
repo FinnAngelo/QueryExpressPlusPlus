@@ -5,7 +5,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlus
+namespace QueryExPlusPlus.WinformsMdiApp
 {
     /// <summary>
     /// A simple implementation of IBrowser for Oracle.  No support for SPs, packages, etc
