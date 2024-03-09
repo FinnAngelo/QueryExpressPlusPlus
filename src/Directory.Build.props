@@ -1,0 +1,33 @@
+<Project>
+
+	<!-- https://learn.microsoft.com/en-us/dotnet/standard/library-guidance/nuget#pre-release-packages -->
+	<!-- https://learn.microsoft.com/en-us/nuget/reference/nuspec -->
+	<PropertyGroup>
+		<PackageId>$(AssemblyName)</PackageId>
+		<AutoIncrementPackageRevision>true</AutoIncrementPackageRevision>
+		
+		<Title>QueryExpress++</Title>
+		<Description>A lite database query tool, forked from Query ExPlus</Description>
+		<Authors>Currently Jon Finn Angelo, previously Albahari and Guessman</Authors>
+		<Copyright>Copyright © Jon Finn Angelo $([System.DateTime]::Now.ToString("yyyy"))</Copyright>
+		<PackageTags>qx++;database;queryexlusplus</PackageTags>
+		<!--<PackageIcon></PackageIcon>-->
+		<PackageProjectUrl>https://github.com/FinnAngelo/QueryExPlusPlus</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/FinnAngelo/QueryExPlusPlus</RepositoryUrl>
+		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+		<PackageReleaseNotes>
+			Built: $([System.DateTime]::Now.ToString("yyyy-MM-dd HH:mm:ss"))
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<!-- https://learn.microsoft.com/en-us/dotnet/standard/library-guidance/versioning -->
+	<PropertyGroup>
+		<!--<AssemblyVersion>$([System.DateTime]::Now.ToString("yyyy.MMdd.HHmm"))</AssemblyVersion>-->
+		<AssemblyVersion>0.0.1.1</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<InformationalVersion>$(PackageVersion)</InformationalVersion>
+		<PackageVersion>$(FileVersion)-prerelease</PackageVersion>
+	</PropertyGroup>
+
+
+</Project>

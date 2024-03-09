@@ -1,6 +1,4 @@
-using QueryExPlusPlus.LegacyApp.Properties;
-
-namespace QueryExPlusPlus.LegacyApp;
+namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 partial class AboutForm
 {

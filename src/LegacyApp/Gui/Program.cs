@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 namespace QueryExPlusPlus.LegacyApp
 {

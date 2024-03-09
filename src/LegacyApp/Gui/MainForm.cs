@@ -4,6 +4,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using QueryExPlusPlus.LegacyApp.Properties;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 namespace QueryExPlusPlus.LegacyApp
 {
