@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
 	internal class CommandLineParams : IEnumerable
 	{

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Specialized;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
 	public class FileUtil
 	{

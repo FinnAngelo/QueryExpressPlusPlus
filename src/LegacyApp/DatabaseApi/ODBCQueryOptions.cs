@@ -3,7 +3,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     /// <summary>
     /// Defining provider-specific query options that can be globally applied 

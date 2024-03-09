@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     public partial class ConnectForm : Form
     {
@@ -14,7 +14,7 @@ namespace QueryExPlusPlus.WinformsMdiApp
         public ConnectForm()
         {
             InitializeComponent();
-			if (QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.SQLAuthenticationDefault)
+			if (QueryExPlusPlus.LegacyApp.Properties.Settings.Default.SQLAuthenticationDefault)
 			{
 				rbSqlUntrusted.Checked = true;
 			}

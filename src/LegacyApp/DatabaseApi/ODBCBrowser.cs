@@ -5,7 +5,7 @@ using System.Data.Odbc;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     /// <summary>
     /// An implementation of IBrowser

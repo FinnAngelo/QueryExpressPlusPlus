@@ -1,7 +1,7 @@
 using System.Data;
 using System.Data.OracleClient;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     class OracleDbClient: DbClient
     {

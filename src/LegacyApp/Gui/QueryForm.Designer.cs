@@ -1,4 +1,4 @@
-namespace QueryExPlusPlus.WinformsMdiApp  
+namespace QueryExPlusPlus.LegacyApp  
 {
     partial class QueryForm
     {

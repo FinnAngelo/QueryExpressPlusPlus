@@ -1,6 +1,6 @@
-using QueryExPlusPlus.WinformsMdiApp.Properties;
+using QueryExPlusPlus.LegacyApp.Properties;
 
-namespace QueryExPlusPlus.WinformsMdiApp;
+namespace QueryExPlusPlus.LegacyApp;
 
 partial class MainForm
 {

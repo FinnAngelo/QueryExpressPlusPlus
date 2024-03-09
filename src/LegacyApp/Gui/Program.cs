@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     static class Program
     {
@@ -17,11 +17,11 @@ namespace QueryExPlusPlus.WinformsMdiApp
                 if (DisplayHelpIfNeeded(args))
                     return;
             }
-            if (QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.IsFirstRun)
+            if (QueryExPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun)
             {
-                QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.Upgrade();
-                QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.IsFirstRun = false;
-                QueryExPlusPlus.WinformsMdiApp.Properties.Settings.Default.Save();
+                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.Upgrade();
+                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun = false;
+                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.Save();
                 System.Windows.Forms.MessageBox.Show("Settings Upgraded");
             }
             Application.EnableVisualStyles();

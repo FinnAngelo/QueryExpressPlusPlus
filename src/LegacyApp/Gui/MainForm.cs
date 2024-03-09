@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
-using QueryExPlusPlus.WinformsMdiApp.Properties;
+using QueryExPlusPlus.LegacyApp.Properties;
 
-namespace QueryExPlusPlus.WinformsMdiApp
+namespace QueryExPlusPlus.LegacyApp
 {
     public partial class MainForm : Form
     {
