@@ -1,119 +1,47 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Reflection;
+using AutoMapper;
+using Fluxor;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Store;
 
 namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 partial class AboutForm : Form
 {
-    public AboutForm()
+    private readonly IDispatcher _dispatcher;
+    private readonly IState<AboutState> _aboutState;
+    private readonly IMapper _mapper;
+
+    public AboutForm(
+        IDispatcher dispatcher,
+        IState<AboutState> aboutState,
+        IMapper mapper)
     {
         InitializeComponent();
+        _dispatcher = dispatcher;
+        _aboutState = aboutState;
+        _mapper = mapper;
 
-        //  Initialize the AboutBox to display the product information from the assembly information.
-        //  Change assembly information settings for your application through either:
-        //  - Project->Properties->Application->Assembly Information
-        //  - AssemblyInfo.cs
-        this.Text = String.Format("About {0}", AssemblyTitle);
-        this.labelProductName.Text = AssemblyProduct;
-        this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-        this.labelCopyright.Text = AssemblyCopyright;
-        this.labelCompanyName.Text = AssemblyCompany;
-        this.textBoxDescription.Text = AssemblyDescription;
+        _aboutState.StateChanged += _aboutState_StateChanged;
+        _aboutState_StateChanged(this, new());
+
+        _dispatcher.Dispatch(new AboutLoadAssemblyInfoAction());
+
+        var foo = DateTimeOffset.Now.ToString();
     }
 
-    #region Assembly Attribute Accessors
+    private void _aboutState_StateChanged(object? sender, EventArgs e)
+        => _mapper.Map(_aboutState.Value, this);
 
-    public static string AssemblyTitle
+    public class MappingProfile : Profile
     {
-        get
+        public MappingProfile()
         {
-            // Get all Title attributes on this assembly
-            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
-            // If there is at least one Title attribute
-            if (attributes.Length > 0)
-            {
-                // Select the first one
-                AssemblyTitleAttribute titleAttribute = (AssemblyTitleAttribute)attributes[0];
-                // If it is not an empty string, return it
-                if (titleAttribute.Title != "")
-                    return titleAttribute.Title;
-            }
-            // If there was no Title attribute, or if the Title attribute was the empty string, return the .exe name
-            return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().Location);
+            CreateMap<AboutState, AboutForm>()
+            .ForPath(dest => dest.Text, opt => opt.MapFrom(src => src.Title))
+            .ForPath(dest => dest.labelProductName.Text, opt => opt.MapFrom(src => src.ProductName))
+            .ForPath(dest => dest.labelVersion.Text, opt => opt.MapFrom(src => src.Version))
+            .ForPath(dest => dest.labelCopyright.Text, opt => opt.MapFrom(src => src.Copyright))
+            .ForPath(dest => dest.labelCompanyName.Text, opt => opt.MapFrom(src => src.InformationalVersion))
+            .ForPath(dest => dest.textBoxDescription.Text, opt => opt.MapFrom(src => src.Description));
         }
-    }
-
-    public static string AssemblyVersion
-    {
-        get
-        {
-            return Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        }
-    }
-
-    public static string AssemblyDescription
-    {
-        get
-        {
-            // Get all Description attributes on this assembly
-            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
-            // If there aren't any Description attributes, return an empty string
-            if (attributes.Length == 0)
-                return "";
-            // If there is a Description attribute, return its value
-            return ((AssemblyDescriptionAttribute)attributes[0]).Description;
-        }
-    }
-
-    public static string AssemblyProduct
-    {
-        get
-        {
-            // Get all Product attributes on this assembly
-            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyProductAttribute), false);
-            // If there aren't any Product attributes, return an empty string
-            if (attributes.Length == 0)
-                return "";
-            // If there is a Product attribute, return its value
-            return ((AssemblyProductAttribute)attributes[0]).Product;
-        }
-    }
-
-    public static string AssemblyCopyright
-    {
-        get
-        {
-            // Get all Copyright attributes on this assembly
-            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-            // If there aren't any Copyright attributes, return an empty string
-            if (attributes.Length == 0)
-                return "";
-            // If there is a Copyright attribute, return its value
-            return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
-        }
-    }
-
-    public static string AssemblyCompany
-    {
-        get
-        {
-            // Get all Company attributes on this assembly
-            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCompanyAttribute), false);
-            // If there aren't any Company attributes, return an empty string
-            if (attributes.Length == 0)
-                return "";
-            // If there is a Company attribute, return its value
-            return ((AssemblyCompanyAttribute)attributes[0]).Company;
-        }
-    }
-    #endregion
-
-    private void okButton_Click(object sender, EventArgs e)
-    {
-
     }
 }

@@ -26,7 +26,7 @@
 		<AssemblyVersion>0.0.1.1</AssemblyVersion>
 		<FileVersion>$(AssemblyVersion)</FileVersion>
 		<InformationalVersion>$(PackageVersion)</InformationalVersion>
-		<PackageVersion>$(FileVersion)-prerelease</PackageVersion>
+		<PackageVersion>$(FileVersion)-prerelease+AsAt$([System.DateTime]::Now.ToString("yyyyMMddHHmmssz").Replace("+","z"))</PackageVersion>
 	</PropertyGroup>
 
 

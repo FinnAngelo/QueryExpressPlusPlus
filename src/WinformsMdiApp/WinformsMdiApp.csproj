@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<!--<OutputType>WinExe</OutputType>-->
 		<TargetFramework>net8.0-windows</TargetFramework>
+		<LangVersion>10</LangVersion>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -26,6 +27,13 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!--<PackageReference Include="AutoMapper" Version="13.0.1" />-->
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="Fluxor" Version="5.9.1" />
+		<!--<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />-->
 	</ItemGroup>
 
 </Project>
