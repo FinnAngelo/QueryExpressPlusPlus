@@ -68,13 +68,13 @@ partial class AboutForm
         // logoPictureBox
         // 
         logoPictureBox.Dock = DockStyle.Fill;
-        logoPictureBox.Image = Resources.logoPictureBox_Image;
+        logoPictureBox.Image = Resources.Qx__130x59px;
         logoPictureBox.Location = new Point(4, 3);
         logoPictureBox.Margin = new Padding(4, 3, 4, 3);
         logoPictureBox.Name = "logoPictureBox";
         tableLayoutPanel.SetRowSpan(logoPictureBox, 6);
         logoPictureBox.Size = new Size(152, 301);
-        logoPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+        logoPictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
         logoPictureBox.TabIndex = 12;
         logoPictureBox.TabStop = false;
         // 

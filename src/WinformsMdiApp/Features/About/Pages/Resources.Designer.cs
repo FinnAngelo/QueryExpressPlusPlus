@@ -69,5 +69,15 @@ namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Qx__130x59px {
+            get {
+                object obj = ResourceManager.GetObject("Qx__130x59px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

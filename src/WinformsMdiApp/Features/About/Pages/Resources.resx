@@ -121,4 +121,7 @@
   <data name="logoPictureBox_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\logoPictureBox.Image.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Qx__130x59px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Qx++130x59px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
