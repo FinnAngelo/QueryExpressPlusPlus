@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using Microsoft.Extensions.DependencyInjection;
 using QueryExPlusPlus.LegacyApp.Properties;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 namespace QueryExPlusPlus.LegacyApp
 {
@@ -204,7 +206,8 @@ namespace QueryExPlusPlus.LegacyApp
         //}
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new AboutForm().ShowDialog();
+            Program.ServiceProvider.GetRequiredService<AboutForm>().ShowDialog();
+            //new AboutForm().ShowDialog();
         }
         #endregion
 

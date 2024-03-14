@@ -1,6 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Windows.Forms;
+using Fluxor;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
+using QueryExPlusPlus.WinformsMdiApp.Features.About.Store;
 
 namespace QueryExPlusPlus.LegacyApp
 {
@@ -26,6 +32,19 @@ namespace QueryExPlusPlus.LegacyApp
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Application.ThreadException += (object sender, ThreadExceptionEventArgs e) => MessageBox.Show(e.Exception.Message);
+            AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => MessageBox.Show(e.ExceptionObject.ToString());
+
+            var host = CreateHostBuilder().Build();
+            ServiceProvider = host.Services;
+
+            var store = ServiceProvider.GetRequiredService<IStore>();
+            //await store.InitializeAsync();
+            store.InitializeAsync().Wait();// WTF?
+
+            //var app = ServiceProvider.GetRequiredService<MainForm>();
+
             Application.Run(new MainForm(args));
         }
 
@@ -39,9 +58,9 @@ namespace QueryExPlusPlus.LegacyApp
             CommandLineParams cmdLine = new CommandLineParams(args);
             if (cmdLine["?"] != null ||cmdLine["help"] != null)
             {
-                System.Console.WriteLine(string.Format("{0} - {1}", 
-                                             AboutForm.AssemblyTitle, 
-                                             AboutForm.AssemblyVersion));
+                //System.Console.WriteLine(string.Format("{0} - {1}", 
+                //                             AboutForm.AssemblyTitle, 
+                //                             AboutForm.AssemblyVersion));
                 System.Console.WriteLine("-------------------------------------------------------------");
                 System.Console.WriteLine("Command Line Arguments");
                 System.Console.WriteLine("   -?, -help : Help");
@@ -55,6 +74,30 @@ namespace QueryExPlusPlus.LegacyApp
                 return true;
             }
             return false;
+        }
+
+
+
+        // hmm... is Service locator anti-pattern needed for winforms?
+        public static IServiceProvider ServiceProvider { get; private set; } = null!;
+
+        static IHostBuilder CreateHostBuilder()
+        {
+            return Host.CreateDefaultBuilder()
+                .ConfigureServices((context, services) =>
+                {
+                    //services.AddScoped<MainForm>();
+                    services.AddSingleton<MainForm>();
+                    services.AddSingleton<Assembly>(typeof(Program).Assembly);
+                    services.AddTransient<AboutForm>();
+                    services.AddFluxor(o => o.ScanAssemblies(
+                        typeof(Program).Assembly,
+                        typeof(AboutForm).Assembly
+                        ));
+
+                    services.AddAutoMapper(typeof(AboutState).Assembly);
+                    services.AddAutoMapper(typeof(Program).Assembly);
+                });
         }
     }
 }
