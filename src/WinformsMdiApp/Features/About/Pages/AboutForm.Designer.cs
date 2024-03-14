@@ -27,92 +27,86 @@ partial class AboutForm
     /// </summary>
     private void InitializeComponent()
     {
-        logoPictureBox = new PictureBox();
-        labelProductName = new Label();
-        labelVersion = new Label();
-        labelCopyright = new Label();
-        labelCompanyName = new Label();
-        textBoxDescription = new TextBox();
+        picLogo = new PictureBox();
+        lblProductName = new Label();
+        lblVersion = new Label();
+        lblCopyright = new Label();
+        lblInformationalVersion = new Label();
+        txtDescription = new TextBox();
         okButton = new Button();
-        ((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
         SuspendLayout();
         // 
-        // logoPictureBox
+        // picLogo
         // 
-        logoPictureBox.Image = Resources.Qx__130x59px;
-        logoPictureBox.Location = new Point(16, 16);
-        logoPictureBox.Margin = new Padding(5, 4, 5, 4);
-        logoPictureBox.Name = "logoPictureBox";
-        logoPictureBox.Size = new Size(130, 58);
-        logoPictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
-        logoPictureBox.TabIndex = 1;
-        logoPictureBox.TabStop = false;
+        picLogo.Image = Resources.Qx__130x59px;
+        picLogo.Location = new Point(16, 16);
+        picLogo.Margin = new Padding(5, 4, 5, 4);
+        picLogo.Name = "picLogo";
+        picLogo.Size = new Size(130, 58);
+        picLogo.SizeMode = PictureBoxSizeMode.CenterImage;
+        picLogo.TabIndex = 1;
+        picLogo.TabStop = false;
         // 
-        // labelProductName
+        // lblProductName
         // 
-        labelProductName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-        labelProductName.Location = new Point(160, 16);
-        labelProductName.Size = new Size(400, 27);
-        labelProductName.TabIndex = 2;
-        labelProductName.Text = "Product Name";
-        labelProductName.TextAlign = ContentAlignment.TopLeft;
-
+        lblProductName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        lblProductName.Location = new Point(160, 16);
+        lblProductName.Name = "lblProductName";
+        lblProductName.Size = new Size(400, 27);
+        lblProductName.TabIndex = 2;
+        lblProductName.Text = "Product Name";
         // 
-        // labelVersion
+        // lblVersion
         // 
-        labelVersion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-        labelVersion.Location = new Point(160, 48);
-        labelVersion.Size = new Size(400, 27);
-        labelVersion.TabIndex = 3;
-        labelVersion.Text = "Version";
-        labelVersion.TextAlign = ContentAlignment.TopLeft;
+        lblVersion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        lblVersion.Location = new Point(160, 48);
+        lblVersion.Name = "lblVersion";
+        lblVersion.Size = new Size(400, 27);
+        lblVersion.TabIndex = 3;
+        lblVersion.Text = "Version";
         // 
-        // labelCopyright
+        // lblCopyright
         // 
-        labelCopyright.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-        labelCopyright.Location = new Point(160, 80);
-        labelCopyright.Size = new Size(400, 27);
-        labelCopyright.TabIndex = 4;
-        labelCopyright.Text = "Copyright";
-        labelCopyright.TextAlign = ContentAlignment.TopLeft;
-
+        lblCopyright.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        lblCopyright.Location = new Point(160, 112);
+        lblCopyright.Name = "lblCopyright";
+        lblCopyright.Size = new Size(400, 27);
+        lblCopyright.TabIndex = 4;
+        lblCopyright.Text = "Copyright";
         // 
-        // labelCompanyName
+        // lblInformationalVersion
         // 
-        labelCompanyName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-        labelCompanyName.Location = new Point(160, 112);
-        labelCompanyName.Size = new Size(400, 27);
-        labelCompanyName.TabIndex = 5;
-        labelCompanyName.Text = "Company Name";
-        labelCompanyName.TextAlign = ContentAlignment.TopLeft;
-
+        lblInformationalVersion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        lblInformationalVersion.Location = new Point(160, 80);
+        lblInformationalVersion.Name = "lblInformationalVersion";
+        lblInformationalVersion.Size = new Size(400, 27);
+        lblInformationalVersion.TabIndex = 5;
+        lblInformationalVersion.Text = "Informational Version";
         // 
-        // textBoxDescription
+        // txtDescription
         // 
-
-        textBoxDescription.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
-        textBoxDescription.Location = new Point(160, 144);
-        textBoxDescription.Size = new Size(400, 240);
-        textBoxDescription.TabIndex = 6;
-        textBoxDescription.Text = "Description";
-        textBoxDescription.TextAlign = HorizontalAlignment.Left;
-
-        textBoxDescription.Margin = new Padding(0);
-        textBoxDescription.Multiline = true;
-        textBoxDescription.ReadOnly = true;
-        textBoxDescription.ScrollBars = ScrollBars.Both;
-        textBoxDescription.TabStop = false;
-
+        txtDescription.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        txtDescription.Location = new Point(160, 144);
+        txtDescription.Margin = new Padding(0);
+        txtDescription.Multiline = true;
+        txtDescription.Name = "txtDescription";
+        txtDescription.ReadOnly = true;
+        txtDescription.ScrollBars = ScrollBars.Both;
+        txtDescription.Size = new Size(400, 240);
+        txtDescription.TabIndex = 6;
+        txtDescription.TabStop = false;
+        txtDescription.Text = "Description";
         // 
         // okButton
         // 
         okButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
         okButton.DialogResult = DialogResult.Cancel;
         okButton.Location = new Point(448, 400);
+        okButton.Name = "okButton";
         okButton.Size = new Size(112, 32);
         okButton.TabIndex = 7;
         okButton.Text = "&OK";
-
         // 
         // AboutForm
         // 
@@ -120,30 +114,28 @@ partial class AboutForm
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(576, 448);
-
-        Controls.Add(logoPictureBox);
-        Controls.Add(labelProductName);
-        Controls.Add(labelVersion);
-        Controls.Add(labelCopyright);
-        Controls.Add(labelCompanyName);
-        Controls.Add(textBoxDescription);
+        Controls.Add(picLogo);
+        Controls.Add(lblProductName);
+        Controls.Add(lblVersion);
+        Controls.Add(lblCopyright);
+        Controls.Add(lblInformationalVersion);
+        Controls.Add(txtDescription);
         Controls.Add(okButton);
-
+        Name = "AboutForm";
         ShowIcon = false;
         ShowInTaskbar = false;
         StartPosition = FormStartPosition.CenterParent;
-
-        ((System.ComponentModel.ISupportInitialize)logoPictureBox).EndInit();
+        ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
 
     #endregion
-    private System.Windows.Forms.PictureBox logoPictureBox;
-    private System.Windows.Forms.Label labelProductName;
-    private System.Windows.Forms.Label labelVersion;
-    private System.Windows.Forms.Label labelCopyright;
-    private System.Windows.Forms.Label labelCompanyName;
-    private System.Windows.Forms.TextBox textBoxDescription;
+    private System.Windows.Forms.PictureBox picLogo;
+    private System.Windows.Forms.Label lblProductName;
+    private System.Windows.Forms.Label lblVersion;
+    private System.Windows.Forms.Label lblCopyright;
+    private System.Windows.Forms.Label lblInformationalVersion;
+    private System.Windows.Forms.TextBox txtDescription;
     private System.Windows.Forms.Button okButton;
 }

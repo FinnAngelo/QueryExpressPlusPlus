@@ -21,7 +21,10 @@ partial class AboutForm : Form
         _mapper = mapper;
 
         _aboutState.StateChanged += _aboutState_StateChanged;
-        _aboutState_StateChanged(this, new());
+        if (!aboutState.Value.IsInitialized)
+        {
+            _aboutState_StateChanged(this, new());
+        }
 
         _dispatcher.Dispatch(new AboutLoadAssemblyInfoAction());
 
@@ -37,11 +40,12 @@ partial class AboutForm : Form
         {
             CreateMap<AboutState, AboutForm>()
             .ForPath(dest => dest.Text, opt => opt.MapFrom(src => src.Title))
-            .ForPath(dest => dest.labelProductName.Text, opt => opt.MapFrom(src => src.ProductName))
-            .ForPath(dest => dest.labelVersion.Text, opt => opt.MapFrom(src => src.Version))
-            .ForPath(dest => dest.labelCopyright.Text, opt => opt.MapFrom(src => src.Copyright))
-            .ForPath(dest => dest.labelCompanyName.Text, opt => opt.MapFrom(src => src.InformationalVersion))
-            .ForPath(dest => dest.textBoxDescription.Text, opt => opt.MapFrom(src => src.Description));
+            .ForPath(dest => dest.Cursor, opt => opt.MapFrom(src => src.IsLoading ? Cursors.WaitCursor : Cursors.Default))
+            .ForPath(dest => dest.lblProductName.Text, opt => opt.MapFrom(src => src.ProductName))
+            .ForPath(dest => dest.lblVersion.Text, opt => opt.MapFrom(src => src.Version))
+            .ForPath(dest => dest.lblCopyright.Text, opt => opt.MapFrom(src => src.Copyright))
+            .ForPath(dest => dest.lblInformationalVersion.Text, opt => opt.MapFrom(src => src.InformationalVersion))
+            .ForPath(dest => dest.txtDescription.Text, opt => opt.MapFrom(src => src.Description));
         }
     }
 }

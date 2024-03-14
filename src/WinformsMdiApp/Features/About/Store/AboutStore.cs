@@ -87,7 +87,8 @@ public static class AboutReducers
     {
         return state with
         {
-            IsInitialized = true
+            IsInitialized = true,
+            IsLoading = false
         };
     }
 }
@@ -107,7 +108,7 @@ public class AboutEffects
         dispatcher.Dispatch(new AboutSetIsLoadingAction(true));
 
         // Yeah, this is a bit contrived, but I wanted the async
-        await Task.Delay(2000);
+        await Task.Delay(5000);
 
         var action = new AboutSetAssemblyInfoAction(
             Title: $@"About {GetAssemblyTitle(_assembly)}",
@@ -120,7 +121,7 @@ public class AboutEffects
 
         dispatcher.Dispatch(action);
 
-        dispatcher.Dispatch(new AboutSetIsLoadingAction(false));
+        dispatcher.Dispatch(new AboutSetIsInitializedAction());
     }
 
     #region Assembly Attribute Accessors   
