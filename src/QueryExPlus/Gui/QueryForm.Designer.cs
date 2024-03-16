@@ -1,4 +1,4 @@
-namespace QueryExPlusPlus.LegacyApp  
+namespace QueryExPlus  
 {
     partial class QueryForm
     {
@@ -232,11 +232,7 @@ namespace QueryExPlusPlus.LegacyApp
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(764, 417);
 			this.Controls.Add(this.splitBrowser);
-<<<<<<<< HEAD:src/LegacyApp/Gui/QueryForm.Designer.cs
-			this.Icon = Properties.Resources.Icon;
-========
 			this.Icon = QueryExPlus.Properties.Resource.Icon;// ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
->>>>>>>> 5ff94480365a4eb4067f2abe53a59c8a1754eb16:src/QueryExPlus/Gui/QueryForm.Designer.cs
 			this.KeyPreview = true;
 			this.Name = "QueryForm";
 			this.Text = "QueryForm";
