@@ -1,0 +1,31 @@
+Code	File	Line	Column
+
+logoPictureBox.Image							AboutForm.Designer.cs	
+
+pictureBox1.Image								ConnectForm.Designer.cs	
+
+newToolStripMenuItem.Image						MainForm.Designer.cs	
+settingsToolStripMenuItem.Image					MainForm.Designer.cs	
+openToolStripMenuItem.Image						MainForm.Designer.cs	
+saveToolStripMenuItem.Image						MainForm.Designer.cs	
+printToolStripMenuItem.Image					MainForm.Designer.cs	
+cutToolStripMenuItem.Image						MainForm.Designer.cs	
+copyToolStripMenuItem.Image						MainForm.Designer.cs	
+copyWithHeadersToolStripMenuItem.Image			MainForm.Designer.cs	
+pasteToolStripMenuItem.Image					MainForm.Designer.cs	
+executeToolStripMenuItem.Image					MainForm.Designer.cs	
+cancelExecutingQueryToolStripMenuItem.Image		MainForm.Designer.cs	
+resultsInTextToolStripMenuItem.Image			MainForm.Designer.cs	
+resultsInGridToolStripMenuItem.Image			MainForm.Designer.cs	
+
+newToolStripButton.Image						MainForm.Designer.cs	
+openToolStripButton.Image						MainForm.Designer.cs	
+saveToolStripButton.Image						MainForm.Designer.cs	
+ExecutetoolStripButton.Image					MainForm.Designer.cs	
+cancelExecutingQuerytoolStripButton.Image		MainForm.Designer.cs	
+resultsInTexttoolStripButton.Image				MainForm.Designer.cs	
+resultsInGridtoolStripButton.Image				MainForm.Designer.cs	
+
+Icon											MainForm.Designer.cs	
+
+$this.Icon										QueryForm.Designer.cs	
