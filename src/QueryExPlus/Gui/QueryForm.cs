@@ -1199,9 +1199,9 @@ namespace QueryExPlus
 				StringCollection actions = Browser.GetActionList(treeView.SelectedNode);
 				if (actions != null)
 				{
-					System.Windows.Forms.ContextMenu cm = new ContextMenu();
+					System.Windows.Forms.ContextMenuStrip cm = new ContextMenuStrip();
 					foreach (string action in actions)
-						cm.MenuItems.Add(action, new EventHandler(DoBrowserAction));
+						cm.Items.Add(action, null, new EventHandler(DoBrowserAction));
 					cm.Show(treeView, new Point(e.X, e.Y));
 				}
 			}
@@ -1211,7 +1211,7 @@ namespace QueryExPlus
 			// This is called from the context menu activated by the TreeView's right-click
 			// event handler (treeView_MouseUp) and appends text to the query textbox
 			// applicable to the selected menu item.
-			MenuItem mi = (MenuItem)sender;
+			ToolStripMenuItem mi = (ToolStripMenuItem)sender;
 			// Ask the browser for the text to append, applicable to the selected node and menu item text.
 			string s = Browser.GetActionText(treeView.SelectedNode, mi.Text);
 			if (s == null) return;
