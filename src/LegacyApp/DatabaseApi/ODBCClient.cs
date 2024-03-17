@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.Odbc;
 using System.Text;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     class OdbcClient  : DbClient
     {

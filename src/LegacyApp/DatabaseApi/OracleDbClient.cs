@@ -1,7 +1,7 @@
 using System.Data;
 using System.Data.OracleClient;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     class OracleDbClient: DbClient
     {

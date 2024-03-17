@@ -1,10 +1,10 @@
 ﻿using Fluxor;
-using Microsoft.VisualBasic.ApplicationServices;
+//using Microsoft.VisualBasic.ApplicationServices;
 using System.Net.Http.Json;
 using System.Reflection;
 using static System.Net.WebRequestMethods;
 
-namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Store;
+namespace QueryExpressPlusPlus.Features.About.Store;
 
 public record AboutState
 (

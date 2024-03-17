@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages {
+namespace QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QueryExPlusPlus.WinformsMdiApp.Features.About.Pages.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -5,7 +5,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     /// <summary>
     /// An implementation of IBrowser for MS SQL Server.

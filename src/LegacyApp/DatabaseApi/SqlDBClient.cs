@@ -2,7 +2,7 @@ using System.Data;
 using Microsoft.Data.SqlClient;
 using System.Text;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 { 
     class SqlDBClient : DbClient
     {

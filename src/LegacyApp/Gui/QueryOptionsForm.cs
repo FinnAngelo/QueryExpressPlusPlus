@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     internal partial class QueryOptionsForm : Form
     {

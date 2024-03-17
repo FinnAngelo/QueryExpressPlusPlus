@@ -1,4 +1,4 @@
-﻿namespace QueryExPlusPlus.LegacyApp.Gui
+﻿namespace QueryExpressPlusPlus.LegacyApp.Gui
 {
 	partial class SettingsForm
 	{

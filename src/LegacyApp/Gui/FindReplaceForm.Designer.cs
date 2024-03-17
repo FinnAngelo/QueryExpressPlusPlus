@@ -1,4 +1,4 @@
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     partial class FindReplaceForm
     {

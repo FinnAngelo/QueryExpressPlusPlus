@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Text;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     class OleDbClient  : DbClient
     {

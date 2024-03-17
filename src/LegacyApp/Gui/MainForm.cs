@@ -4,10 +4,10 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using Microsoft.Extensions.DependencyInjection;
-using QueryExPlusPlus.LegacyApp.Properties;
-using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
+using QueryExpressPlusPlus.LegacyApp.Properties;
+using QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     public partial class MainForm : Form
     {

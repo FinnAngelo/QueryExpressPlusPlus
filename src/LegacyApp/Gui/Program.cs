@@ -5,10 +5,11 @@ using System.Windows.Forms;
 using Fluxor;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
-using QueryExPlusPlus.WinformsMdiApp.Features.About.Store;
+using QueryExpressPlusPlus.Features.About.Store;
+using QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages;
 
-namespace QueryExPlusPlus.LegacyApp
+
+namespace QueryExpressPlusPlus.LegacyApp
 {
     static class Program
     {
@@ -23,11 +24,11 @@ namespace QueryExPlusPlus.LegacyApp
                 if (DisplayHelpIfNeeded(args))
                     return;
             }
-            if (QueryExPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun)
+            if (QueryExpressPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun)
             {
-                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.Upgrade();
-                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun = false;
-                QueryExPlusPlus.LegacyApp.Properties.Settings.Default.Save();
+                QueryExpressPlusPlus.LegacyApp.Properties.Settings.Default.Upgrade();
+                QueryExpressPlusPlus.LegacyApp.Properties.Settings.Default.IsFirstRun = false;
+                QueryExpressPlusPlus.LegacyApp.Properties.Settings.Default.Save();
                 System.Windows.Forms.MessageBox.Show("Settings Upgraded");
             }
             Application.EnableVisualStyles();
@@ -90,11 +91,13 @@ namespace QueryExPlusPlus.LegacyApp
                     services.AddSingleton<MainForm>();
                     services.AddSingleton<Assembly>(typeof(Program).Assembly);
                     services.AddTransient<AboutForm>();
+                    services.AddAutoMapper(typeof(AboutState).Assembly);
                     services.AddFluxor(o => o.ScanAssemblies(
                         typeof(Program).Assembly,
                         typeof(AboutForm).Assembly
                         ));
 
+                    services.AddAutoMapper(typeof(AboutForm).Assembly);
                     services.AddAutoMapper(typeof(AboutState).Assembly);
                     services.AddAutoMapper(typeof(Program).Assembly);
                 });

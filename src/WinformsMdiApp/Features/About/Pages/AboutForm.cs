@@ -1,8 +1,8 @@
 using AutoMapper;
 using Fluxor;
-using QueryExPlusPlus.WinformsMdiApp.Features.About.Store;
+using QueryExpressPlusPlus.Features.About.Store;
 
-namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
+namespace QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 partial class AboutForm : Form
 {

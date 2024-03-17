@@ -9,8 +9,8 @@
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<AssemblyName>QueryExPlusPlus.LegacyApp</AssemblyName>
-		<RootNamespace>QueryExPlusPlus.LegacyApp</RootNamespace>
+		<AssemblyName>QueryExpressPlusPlus.LegacyApp</AssemblyName>
+		<RootNamespace>QueryExpressPlusPlus.LegacyApp</RootNamespace>
 
 	</PropertyGroup>
 	<ItemGroup>

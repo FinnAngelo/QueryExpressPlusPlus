@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net48</TargetFramework>
-		<!--TargetFramework>net6.0-windows</TargetFramework-->
+		<!--<TargetFramework>net48</TargetFramework>-->
+		<TargetFramework>net8.0-windows</TargetFramework>
 		<OutputType>WinExe</OutputType>
 		<ApplicationIcon>qe2.ico</ApplicationIcon>
 		<NoStdLib>False</NoStdLib>
@@ -32,7 +32,14 @@
 		<PackageReference Include="System.Data.OracleClient" Version="1.0.8" />
 		<PackageReference Include="System.Data.Odbc" Version="8.0.0" />
 		<PackageReference Include="System.Data.OleDb" Version="8.0.0" />
+	</ItemGroup>	
+	
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="Fluxor" Version="5.9.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
 	</ItemGroup>
+	
 	<ItemGroup>
 		<EmbeddedResource Update="Properties\Resource.resx">
 			<Generator>ResXFileCodeGenerator</Generator>

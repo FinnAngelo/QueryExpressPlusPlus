@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     #region Browser Interface
     /// <summary>

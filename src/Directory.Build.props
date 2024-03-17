@@ -2,8 +2,8 @@
 
 	<!-- https://learn.microsoft.com/en-us/dotnet/standard/library-guidance/versioning -->
 	<PropertyGroup>
-		<!-- Feature: About = 0.0.1-->
-		<Version>0.0.1</Version>
+		<!-- Feature: Cleanup & QueryEx 0.0.2-->
+		<Version>0.0.2</Version>
 		<VersionSuffix>dev</VersionSuffix>
 		<SourceRevisionId>Built$([System.DateTime]::Now.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
 
@@ -25,8 +25,8 @@
 		<Copyright>Copyright © Jon Finn Angelo $([System.DateTime]::Now.ToString("yyyy"))</Copyright>
 		<PackageTags>qx++;database;queryexlusplus</PackageTags>
 		<!--<PackageIcon></PackageIcon>-->
-		<PackageProjectUrl>https://github.com/FinnAngelo/QueryExPlusPlus</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/FinnAngelo/QueryExPlusPlus</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/FinnAngelo/QueryExpressPlusPlus</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/FinnAngelo/QueryExpressPlusPlus</RepositoryUrl>
 		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 		<PackageReleaseNotes>
 			Built: $([System.DateTime]::Now.ToString("yyyy-MM-dd HH:mm:ss"))

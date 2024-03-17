@@ -1,6 +1,6 @@
 using System;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     /// <summary>
     /// Opens the connection to a Database.

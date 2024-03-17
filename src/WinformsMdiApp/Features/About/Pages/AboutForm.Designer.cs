@@ -1,4 +1,4 @@
-namespace QueryExPlusPlus.WinformsMdiApp.Features.About.Pages;
+namespace QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages;
 
 partial class AboutForm
 {

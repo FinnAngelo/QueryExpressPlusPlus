@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp.Gui
+namespace QueryExpressPlusPlus.LegacyApp.Gui
 {
 	public partial class SettingsForm : Form
 	{

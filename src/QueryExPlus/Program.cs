@@ -1,6 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
+using System.Threading;
 using System.Windows.Forms;
+using Fluxor;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+//using QueryExpressPlusPlus.WinformsMdiApp.Features.About.Pages;
+//using QueryExpressPlusPlus.WinformsMdiApp.Features.About.Store;
+using AutoMapper;
 
 namespace QueryExPlus
 {
@@ -26,6 +34,19 @@ namespace QueryExPlus
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Application.ThreadException += (object sender, ThreadExceptionEventArgs e) => MessageBox.Show(e.Exception.Message);
+            AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) => MessageBox.Show(e.ExceptionObject.ToString());
+
+            var host = CreateHostBuilder().Build();
+            ServiceProvider = host.Services;
+
+            var store = ServiceProvider.GetRequiredService<IStore>();
+            //await store.InitializeAsync();
+            store.InitializeAsync().Wait();// WTF?
+
+            //var app = ServiceProvider.GetRequiredService<MainForm>();
+
             Application.Run(new MainForm(args));
         }
 
@@ -55,6 +76,29 @@ namespace QueryExPlus
                 return true;
             }
             return false;
+        }
+
+        // hmm... is Service locator anti-pattern needed for winforms?
+        public static IServiceProvider ServiceProvider { get; private set; } = null;
+
+        static IHostBuilder CreateHostBuilder()
+        {
+            return Host.CreateDefaultBuilder()
+                .ConfigureServices((context, services) =>
+                {
+                    //services.AddScoped<MainForm>();
+                    services.AddSingleton<MainForm>();
+                    services.AddSingleton<Assembly>(typeof(Program).Assembly);
+                    services.AddTransient<AboutForm>();
+                    services.AddFluxor(o => o.ScanAssemblies(
+                        typeof(Program).Assembly,
+                        typeof(AboutForm).Assembly
+                        ));
+
+                    //services.AddAutoMapper(typeof(AboutState).assembly);
+                    //services.AddAutoMapper(typeof(Program).Assembly);
+
+                });
         }
     }
 }

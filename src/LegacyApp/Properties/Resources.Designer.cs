@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QueryExPlusPlus.LegacyApp.Properties {
+namespace QueryExpressPlusPlus.LegacyApp.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace QueryExPlusPlus.LegacyApp.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QueryExPlusPlus.LegacyApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QueryExpressPlusPlus.LegacyApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

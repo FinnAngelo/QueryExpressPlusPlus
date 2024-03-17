@@ -1,6 +1,6 @@
-using QueryExPlusPlus.LegacyApp.Properties;
+using QueryExpressPlusPlus.LegacyApp.Properties;
 
-namespace QueryExPlusPlus.LegacyApp;
+namespace QueryExpressPlusPlus.LegacyApp;
 
 partial class MainForm
 {

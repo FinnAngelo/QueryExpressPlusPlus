@@ -1,4 +1,4 @@
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     partial class ConnectForm
     {
@@ -167,11 +167,8 @@ namespace QueryExPlusPlus.LegacyApp
             // 
             // pictureBox1
             // 
-<<<<<<<< HEAD:src/LegacyApp/Gui/ConnectForm.Designer.cs
+
             this.pictureBox1.Image = Properties.Resources.pictureBox1_Image;
-========
-            this.pictureBox1.Image = QueryExPlus.Properties.Resource.pictureBox1_Image;
->>>>>>>> 5ff94480365a4eb4067f2abe53a59c8a1754eb16:src/QueryExPlus/Gui/ConnectForm.Designer.cs
             this.pictureBox1.Location = new System.Drawing.Point(425, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 38);

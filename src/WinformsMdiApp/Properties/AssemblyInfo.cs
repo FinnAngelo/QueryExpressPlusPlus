@@ -17,4 +17,4 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("9af1191b-7e3e-434d-a079-fda39032d098")]
 
-[assembly: InternalsVisibleTo("QueryExPlusPlus.LegacyApp")]
+[assembly: InternalsVisibleTo("QueryExpressPlusPlus.LegacyApp")]

@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     /// <summary>
     /// Defining MSSQL-specific query options that can be globally applied 

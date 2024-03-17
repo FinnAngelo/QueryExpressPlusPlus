@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>10</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<AssemblyName>QueryExpressPlusPlus.Features</AssemblyName>
+		<RootNamespace>QueryExpressPlusPlus.Features</RootNamespace>
+
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!--<PackageReference Include="AutoMapper" Version="13.0.1" />-->
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="Fluxor" Version="5.9.1" />
+		<!--<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />-->
+	</ItemGroup>
+
+</Project>

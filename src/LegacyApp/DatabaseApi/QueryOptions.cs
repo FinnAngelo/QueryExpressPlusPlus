@@ -1,7 +1,7 @@
 using System.Data;
 using System.Windows.Forms;
 
-namespace QueryExPlusPlus.LegacyApp
+namespace QueryExpressPlusPlus.LegacyApp
 {
     /// <summary>
     /// Interface defining query options that can be globally applied 
